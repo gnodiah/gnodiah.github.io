@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Fedora 19 自定义"
+date: 2013-07-20 01:12
+comments: true
+categories: [Vim] 
+
+---
+## 浏览器
+1. Google Chrome
+
+直接进入[Google官网](http://www.google.cn/intl/zh-CN/chrome/)安装即可。
+
+## 中文输入法
+1. Fcitx（小企鹅）
+2. Rime（中州韵）
+
+## 笔记类软件
+推荐基于云存储的跨平台笔记类软件wiznote。
+fedora上直接到wiz.cn官网下载tar.gz安装包安装即可。
+
+## 添加自定义软件启动快捷方式
+gnome 3中默认取消了alacarte，所以安装并设置即可。
+> 参考:[How to create custom application launchers in Gnome 3](http://blog.randell.ph/2011/08/01/how-to-create-custom-application-launchers-in-gnome-3/)
+
+## Gnome 3快捷键
+*   前进/后退键：alt+left/right，而不再是backspace键
+    > 参考:[Set backspace as the Back-Botton](http://linuxg.net/backspace-key-not-working-as-a-back-button-in-nautilus-3-6-2-how-to-fix-this)
+
+## 邮件客户端
+1.  thunderbird
+        官网默认给的是32bit的，64bit机子上不能启动。所以用下面的链接下载64bit版本
+        wget ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/17.0.8/linux-x86_64/en-US/thunderbird-17.0.8.tar.bz2
+        tar -jxvf thunderbird-17.0.8.tar.bz2
+        cd /usr/bin/
+        ln -s ~/Program/thunderbird/thunderbird
+
+2.  配置
+        参考:[thunderbird配置](http://wiki.linux-ren.org/index.php/Thunderbird)
+
+3.  安装Octopress theme时，zsh下执行rake install['octoflat']时要变成rake install\['octoflat'\] why??

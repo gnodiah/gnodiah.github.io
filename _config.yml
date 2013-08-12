@@ -3,11 +3,19 @@
 # ----------------------- #
 
 url: http://Gnodiah.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Stay hungry Stay foolish
+subtitle: 走出去,外面的世界更精彩.
+author: Hayden Wei
 simple_search: http://google.com/search
-description:
+description: A place where I write down my skills & thoughts
+navigation:
+- text: Blog
+  url: http://Gnodiah.github.io
+- text: Archives
+  url: http://Gnodiah.github.io
+- text: About Me
+  url: http://Gnodiah.github.io
+
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -85,8 +93,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: 'gnodiah'
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
