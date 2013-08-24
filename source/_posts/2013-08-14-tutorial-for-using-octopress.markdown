@@ -3,7 +3,7 @@ layout: post
 title: "Tutorial for using Octopress"
 date: 2013-08-14 22:26
 comments: true
-publish: false
+published: false
 categories: [Tutorial, Octopress]
 ---
 

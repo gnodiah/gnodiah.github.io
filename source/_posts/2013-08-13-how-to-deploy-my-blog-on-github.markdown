@@ -3,7 +3,7 @@ layout: post
 title: "how to deploy my blog on Github"
 date: 2013-08-13 19:39
 comments: true
-publish: false
+published: false
 categories: [ blog, Github ]
 ---
 
