@@ -1,1 +1,13 @@
 // Add your custom styling here.
+#content .jumbotron {
+  font-family: "Merienda", "Arvo", "sans-serif";
+}
+#content .hentry .jumbotron {
+  font-family: "Arvo", "sans-serif";
+}
+code {
+  background-color: #cbf5fb !important;
+}
+.jumbotron h3 {
+  color: #8f90a6;
+}

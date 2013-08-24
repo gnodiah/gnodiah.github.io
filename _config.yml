@@ -2,19 +2,19 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://Gnodiah.github.io
+url: http://gnodiah.github.io
 title: Stay hungry Stay foolish
 subtitle: 走出去,外面的世界更精彩.
 author: Hayden Wei
 simple_search: http://google.com/search
-description: A place where I write down my skills & thoughts
+description: A place where I write down my thoughts
 navigation:
 - text: Blog
-  url: http://Gnodiah.github.io
+  url: http://gnodiah.github.io
 - text: Archives
-  url: http://Gnodiah.github.io
-- text: About Me
-  url: http://Gnodiah.github.io
+  url: http://gnodiah.github.io
+- text: About
+  url: http://gnodiah.github.io
 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -66,13 +66,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: 
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: 'GnodiahWei'
 twitter_tweet_button: true
 
 # Google +1

@@ -178,7 +178,7 @@
 
 body {
   color: $text-color;
-  background: $bg-color;
+  background: $bg-color url('/images/back_pattern.png?1346178870') top left;
   font: 18px/1.831 "Open Sans", sans-serif; }
 
 p {
@@ -187,10 +187,10 @@ p {
 a {
   color: $secondary-color;
   text-decoration: none;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   -webkit-backface-visibility: hidden; }
   a:hover {
     color: $tertiary-color;
@@ -200,7 +200,7 @@ h1 {
   color: $primary-color;
   font-size: 32px;
   font-weight: 900; 
-  font-family: "Quicksand"; }
+  font-family: $header-title-font-family; }
   .date-time{
     font-size: 15px;
     color: $accent-color2;
@@ -215,14 +215,14 @@ h2 {
   color: $primary-color;
   font-size: 26px;
   font-weight: 500;
-  font-family: "Quicksand";
+  font-family: $header-title-font-family;
   margin-bottom: 2px; }
 
 h3 {
   color: $accent-color2;
   font-size: 24px;
   font-weight: 500;
-  font-family: "Quicksand";
+  font-family: $header-title-font-family;
   margin-bottom: 4px;
   margin-top: 2px; }
   .tagline
@@ -234,7 +234,7 @@ h4 {
   color: $accent-color2;
   font-size: 18px;
   font-weight: 500;
-  font-family: "Quicksand";
+  font-family: $header-title-font-family;
   line-height: 18px;
   margin-top: 4px; }
 
@@ -242,7 +242,7 @@ h5 {
   color: $accent-color2;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Quicksand";
+  font-family: $header-title-font-family;
   text-transform: none; }
   .date{
     margin-top: 26px;
@@ -252,7 +252,7 @@ h6 {
   color: $accent-color2;
   font-size: 13px;
   font-weight: 500;
-  font-family: "Quicksand";
+  font-family: $header-title-font-family;
   text-transform: none; }
 
 .btn {
@@ -2579,7 +2579,7 @@ body.vjs-full-window {
 .jumbotron {
   font-size: 60px;
   line-height: 70px;
-  font-family: "Quicksand";
+  font-family: $header-title-font-family;
   position: relative;
   padding: 70px 0;
   color: $primary-color; }

@@ -7,5 +7,5 @@
 }
 
 $link-color: lighten(#165b94, 3) !default;
-$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+$mono: "DejaVu Sans Mono", Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
 .mono { font-family: $mono; }
