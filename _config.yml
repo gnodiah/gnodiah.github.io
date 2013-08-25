@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://gnodiah.github.io
+url: http://gnodiah.co.vu
 title: Stay hungry Stay foolish
 subtitle: 走出去,外面的世界更精彩.
 author: Hayden Wei
@@ -10,11 +10,11 @@ simple_search: http://google.com/search
 description: A place where I write down my thoughts
 navigation:
 - text: Blog
-  url: http://gnodiah.github.io
+  url: /index.html
 - text: Archives
-  url: http://gnodiah.github.io
+  url: /blog/archives/index.html
 - text: About
-  url: http://gnodiah.github.io
+  url: /about.html
 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -76,12 +76,13 @@ twitter_user: 'GnodiahWei'
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user:
+# How to find your googleplus_user_id See http://ansonalex.com/google-plus/how-do-i-find-my-google-plus-user-id-google/
+googleplus_user: 107686994663350092504
 googleplus_hidden: false
 
 # Pinboard
@@ -97,7 +98,7 @@ disqus_short_name: 'gnodiah'
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: 'UA-43471347-1'
 
 # Facebook Like
 facebook_like: false
