@@ -6,7 +6,7 @@ comments: true
 categories: [Vim] 
 
 ---
-## 浏览器
+## 浏览器呀
 1. Google Chrome
 
 直接进入[Google官网](http://www.google.cn/intl/zh-CN/chrome/)安装即可。
