@@ -13,7 +13,7 @@ GFW真是一个神奇而又无处不在的东西，它总是与时俱进地封�
 Linux下运行GoAgent所需的依赖库有：python python-devel greenlet gevent
 <!-- More -->
 用以下命令依次安装上述依赖：
-```bash
+```
 sudo yum -y groupinstall "Development Tools"
 sudo yum -y install python python-devel libevent libevent-devel
 curl -L -O https://github.com/python-greenlet/greenlet/archive/0.4.0.tar.gz && tar xvzpf 0.4.0.tar.gz && cd greenlet-0.4.0 && sudo python setup.py install
@@ -33,7 +33,7 @@ curl -L -O https://github.com/downloads/surfly/gevent/gevent-1.0rc2.tar.gz && ta
 在出现的图形设置界面中新增一条启动项，在Command处填写python [你的GoAgent目录]/local/proxy.py即可
 ```
 第二种是以图形界面方式启动，这需要先安装GoAgent的GTK图形界面，依次执行以下命令即可：
-```bash
+```
 sudo yum -y install python-appindicator vte
 cd [你的GoAgent目录]/local/
 python addto-startup.py

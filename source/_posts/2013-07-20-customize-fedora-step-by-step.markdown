@@ -6,7 +6,7 @@ comments: true
 categories: [Vim] 
 
 ---
-## 浏览器呀
+## 浏览器
 1. Google Chrome
 
 直接进入[Google官网](http://www.google.cn/intl/zh-CN/chrome/)安装即可。
@@ -60,12 +60,6 @@ gnome 3中默认取消了alacarte，所以安装并设置即可。
 [Gnome Tweak Tool](https://wiki.gnome.org/GnomeTweakTool)是一款用来自定义优化Gnome高级特性的图形界面工具。它可以用来安装gnome-shell主题、改变字体、恢复桌面功能、修改标题栏、字体反锯齿等等。
 ```
     安装方法：sudo yum install gnome-tweak-tool [会同时安装gnome-shell-extension-common和gnome-shell-extension-user-theme]
-```
-dfsd
-```
-    def hello
-        puts 'hello,world'
-    end
 ```
 
 2. Sublime Text
