@@ -11,7 +11,7 @@ $header-height: 30px;
 		padding-bottom: 10px;
 	}
 	a{
-		color: $color-gray01;
+		color: $color-gray00;
 		@include transition(color 0.3s);
 		&:hover{
 			color: $color-main;
@@ -23,6 +23,13 @@ $header-height: 30px;
 		font-size: 30px;
 		@media screen and (max-width: 1040px){
 			float: none;
+		}
+		a{
+			color: $color-main;
+			@include transition(color 0.3s);
+			&:hover{
+				color: $color-gray00;
+			}
 		}
 	}
 }
