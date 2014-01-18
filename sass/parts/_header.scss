@@ -26,9 +26,9 @@ $header-height: 30px;
 		}
 		a{
 			color: $color-main;
-			@include transition(color 0.3s);
+			@include transition(color 1s);
 			&:hover{
-				color: $color-gray00;
+				color: $color-main01;
 			}
 		}
 	}

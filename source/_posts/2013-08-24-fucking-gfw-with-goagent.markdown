@@ -47,8 +47,6 @@ python addto-startup.py
 
 好了，一切就绪。赶紧登陆Twitter发布一条推文吧！
 
------
-
 ## 设置Gravatar头像
 设置好GoAgent后，想注册[Gravatar][6]账号，给自己设置一个全球通用头像，却发现注册不成功，始终报"Sorry, but this user-agent is banned from using the password retrieval tool."错误。查阅资料后发现，经过GoAgent访问网站的会在User-Agent中加入一个"AppEngine-Google"标识，可能Worldpress为了安全考虑屏蔽了这类注册。
 

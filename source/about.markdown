@@ -1,9 +1,8 @@
 ---
 layout: page
-title: "about me"
+title: "Know me in 10 seconds"
 sharing: true
 footer: true
 ---
 
-## Who am I?
-Hi. I'm Hayden Wei.
+Hi, My name is Hayden Wei.

@@ -54,7 +54,9 @@
 				@include transition(0.3s);
 			}
 			.date, .tags, .comments{
+				display: inline;
 				padding-left: 30px;
+				padding-right: 30px;
 				position: relative;
 				&:before{
 					color: $color-gray03;
