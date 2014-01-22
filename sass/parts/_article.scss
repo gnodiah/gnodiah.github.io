@@ -16,10 +16,10 @@ article{
 		line-height: 35px;
 		margin-bottom: 20px;
 		a{
-			color: $color-gray01;
-			@include transition(color 0.3s);
+			color: $color-main;
+			@include transition(color 0.5s);
 			&:hover{
-				color: $color-main;
+				color: $color-main01;
 			}
 		}
 	}

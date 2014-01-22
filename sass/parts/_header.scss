@@ -25,7 +25,7 @@ $header-height: 30px;
 			float: none;
 		}
 		a{
-			color: $color-main;
+			color: $color-main02;
 			@include transition(color 1s);
 			&:hover{
 				color: $color-main01;

@@ -11,6 +11,7 @@ categories: [Vim]
 
 直接进入[Google官网](http://www.google.cn/intl/zh-CN/chrome/)安装即可。
 
+<!-- more -->
 ## 中文输入法
 1. Fcitx（小企鹅）
 2. Rime（中州韵）
@@ -18,8 +19,6 @@ categories: [Vim]
 ## 笔记类软件
 推荐基于云存储的跨平台笔记类软件wiznote。
 fedora上直接到wiz.cn官网下载tar.gz安装包安装即可。
-
-<!-- more -->
 
 ## 添加自定义软件启动快捷方式
 gnome 3中默认取消了alacarte，所以安装并设置即可。
