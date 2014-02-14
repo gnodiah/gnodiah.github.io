@@ -1,4 +1,5 @@
 {% if index %}
+<div class="section">
 	<div class="meta">
 		<div class="date">{% include post/date.html %}{{ time }}</div>
 		<div class="tags">{% include post/categories.html %}</div>
@@ -12,7 +13,11 @@
 		{% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
 		{% if excerpted == 'true' %}<a href="{{ root_url }}{{ post.url }}" class="more-link">{{ site.excerpt_link }}</a>{% endif %}
 	</div>
+</div>
 {% else %}
+<div class="section-content">
 	<h1 class="title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+	<div class="date">{% include post/date.html %}{{ time }}</div>
 	<div class="entry-content" itemprop="articleBody">{{ content }}</div>
+</div>
 {% endif %}

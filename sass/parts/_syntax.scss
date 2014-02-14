@@ -68,6 +68,7 @@ article{
 }
 
 figure.code{
+	background: #e8e8e8;
 	border: 1px solid $pre-border;
 	margin-top: 10px;
 	padding: 5px 15px;
@@ -90,7 +91,7 @@ figure.code{
 		}
 	}
 	code, pre{
-		background: none;
+		background: #e8e8e8;
 		border: none;
 		padding: 0;
 		margin: 0;
@@ -105,7 +106,7 @@ figure.code{
 		text-align: right;
 	}
 	table{
-		background: white;
+		background: #e8e8e8;
 		border: none;
 		text-align: left;
 		margin-top: 0;

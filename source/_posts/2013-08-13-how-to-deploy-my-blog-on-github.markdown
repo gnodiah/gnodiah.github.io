@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "how to deploy my blog on Github"
+title: "如何在Github上搭建博客"
 date: 2013-08-13 19:39
 comments: true
 published: false

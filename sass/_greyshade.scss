@@ -9,7 +9,7 @@ body {
 	background: #3D4349;
 	font-family: "Open Sans", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 	height: 100%;
-	color: #333;
+	color: #666;
 }
 
 ::selection, ::-moz-selection, ::-webkit-selection {
@@ -42,7 +42,8 @@ body {
 		float: none;
 	}
   h4 {
-    color: #888;
+    color: #AAA;
+		font-style: italic;
   }
 
 	#main-nav {
@@ -100,11 +101,11 @@ body {
 				width: 100%;
 				article {
 					border-top: none;
-					padding: 40px 0px;
+					/*padding: 40px 0px;*/
 					.title {
+						color: $color-main01;
 						margin-left: 0px;
 						/*font-style: italic;*/
-						font-size: 3em;
 					}
 					&.single-post .title{
 						text-align: center;
@@ -112,7 +113,7 @@ body {
 					}
 					.entry-content {
 						margin-left: 0px;
-						line-height: 1.4em;
+						line-height: 1.7em;
 						font-size: 1.1em;
 						p {
 							/*margin-top: 30px;*/
@@ -120,12 +121,12 @@ body {
 						.github-widget p {
 							margin-top: 0px;
 						}
-						.more-link:before {
-							line-height: 1.2em;
-						}
-						.more-link {
-							padding-left: 0px;
-						}
+						//.more-link:before {
+						//	line-height: 1.2em;
+						//}
+						//.more-link {
+						//	padding-left: 0px;
+						//}
 						.gist .gist-file .gist-data {
 							.line_numbers {
 								line-height: inherit;
@@ -139,14 +140,14 @@ body {
 							color: #333;
 							margin-top: 30px;
 							/*margin-bottom: -20px;*/
-							font-weight: bold;
+							/*font-weight: bold;*/
 						}
 						h2::before {
 							border-bottom: none;
 						}
 						blockquote {
 							border-left: 5px solid $greyshade;
-							background: #F7F7F7;
+							background: #E7E7E7;
 							p {
 								margin-top: 0px; 
 							}
@@ -159,6 +160,7 @@ body {
 						}
 					}
 					.meta {
+						margin-right: 8px;
 						position: relative;
 						float: right;
 						top: 0px;
@@ -178,7 +180,7 @@ body {
 					}
 					h1.title{
 						a {
-							color: #333;
+							color: $color-main01;
 							-webkit-transition: color 0.3s;
 							-moz-transition: color 0.3s;
 							-o-transition: color 0.3s;
@@ -203,6 +205,8 @@ body {
 		opacity: 1;
 	}
 	.left-col {
+		box-shadow: 2px 4px 5px rgba(3, 3, 3, 0.2);
+		background: #EA6753;
 		width: 23%;
 		position: fixed;
 		opacity: .3;
@@ -234,6 +238,7 @@ body {
 			}
 			a:hover {
 				color: $greyshade;
+				text-shadow: 0 2px #333;
 			}
 			#sub-nav {
 				margin-top: 10px;
@@ -250,7 +255,7 @@ body {
 
 .archives {
 	.title {
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 	article {
 		.meta {
