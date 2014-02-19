@@ -5,6 +5,8 @@ date: 2013-08-13 19:39
 comments: true
 published: false
 categories: [ blog, Github ]
+tags: [ blog, Github ]
+
 ---
 
 ## Vim技巧

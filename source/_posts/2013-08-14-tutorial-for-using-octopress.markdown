@@ -5,6 +5,8 @@ date: 2013-08-14 22:26
 comments: true
 published: false
 categories: [Tutorial, Octopress]
+tags: [Tutorial, Octopress]
+
 ---
 
 *   新建文章 - rake new_post['title']

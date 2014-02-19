@@ -4,6 +4,7 @@ title: "Customize Fedora 19"
 date: 2013-07-20 01:12
 comments: true
 categories: [Vim] 
+tags: [Vim, Tutorial]
 
 ---
 ## 浏览器
