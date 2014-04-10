@@ -17,7 +17,7 @@
 {% else %}
 <div class="section-content">
 	<h1 class="title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-	<div class="date">{% include post/date.html %}{{ time }}</div>
+	<div class="date">{% include post/date.html %}{{ time }}, {% include post/author.html %}</div>
 	<div class="entry-content" itemprop="articleBody">{{ content }}</div>
 </div>
 {% endif %}

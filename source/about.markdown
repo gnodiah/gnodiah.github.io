@@ -6,3 +6,5 @@ footer: true
 ---
 
 Hi, My name is Hayden Wei.
+
+*This page is under construction...*
