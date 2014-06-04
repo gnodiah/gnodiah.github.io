@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="home">
+
+	<h1>To Be Is To Do</h1>
+
+	<ul class="posts">
+		{% for post in site.posts %}
+		<li><p>
+			<span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		</p></li>
+		{% endfor %}
+	</ul>
+
+</div>

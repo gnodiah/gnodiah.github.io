@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Fucking GFW with GoAgent</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+	<link rel="canonical" href="http://localhost:4000/blog/goagent/2013/08/24/fucking-gfw-with-goagent/">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+
+    <body>
+
+		
+
+    <div class="page-content">
+      <div class="wrap">
+      <div class="post">
+
+	<header class="post-header">
+		<h1>Fucking GFW with GoAgent</h1>
+	</header>
+
+	<article class="post-content">
+		<p>GFW真是一个神奇而又无处不在的东西，它总是与时俱进地封杀你想访问的网站。如果有可能，真是枪毙它1W次都不过瘾。不过好歹有Google GoAgent，它强大、免费，每天提供1G的流量，足以让你用Google查阅资料，观看Youtube的视频，刷刷Twitter的信息。</p>
+
+<!-- More -->
+<p>环境：Fedora 19</p>
+
+<h2 id="section">准备工作</h2>
+<p>Linux下运行GoAgent所需的依赖库有：python python-devel greenlet gevent
+用以下命令依次安装上述依赖：
+<code>
+sudo yum -y groupinstall "Development Tools"
+sudo yum -y install python python-devel libevent libevent-devel
+curl -L -O https://github.com/python-greenlet/greenlet/archive/0.4.0.tar.gz &amp;&amp; tar xvzpf 0.4.0.tar.gz &amp;&amp; cd greenlet-0.4.0 &amp;&amp; sudo python setup.py install
+curl -L -O https://github.com/downloads/surfly/gevent/gevent-1.0rc2.tar.gz &amp;&amp; tar xvzpf gevent-1.0rc2.tar.gz &amp;&amp; cd gevent-1.0rc2 &amp;&amp; sudo python setup.py install
+</code></p>
+
+<h2 id="goagent">安装GoAgent</h2>
+<ol>
+  <li><a href="https://goagent.googlecode.com/files/goagent-goagent-v3.0.2-11-g52ed37f.zip">下载GoAgent</a>并解压，进入GoAgent目录</li>
+  <li>进入server目录<code>cd server</code>，执行上传服务器命令<code>python uploader.zip</code>，
+按照提示输入appid以及邮箱地址和密码。如果没有appid，去<a href="https://appengine.google.com/">Google App Engine官网</a>申请然后再执行第二步就OK了。
+然后修改local/proxy.ini中的[gae]下的appid=你的appid(多appid请用|隔开)以激活客户端。</li>
+</ol>
+
+<h2 id="section-1">设置开机启动</h2>
+<p>安装好后，你当然可以在终端中进入GoAgent目录，然后输入<code>python local/proxy.py</code>来启动GoAgent。但每次开机都输入这样一条命令未免太过麻烦，因此我们可以把它加入到自启列表中。这里有两种设置开机自启方式，一种是直接用命令启动：
+<code>
+终端运行gnome-session-properties
+在出现的图形设置界面中新增一条启动项，在Command处填写python [你的GoAgent目录]/local/proxy.py即可
+</code>
+第二种是以图形界面方式启动，这需要先安装GoAgent的GTK图形界面，依次执行以下命令即可：
+<code>
+sudo yum -y install python-appindicator vte
+cd [你的GoAgent目录]/local/
+python addto-startup.py
+</code>
+请根据自己是否需要GoAgent的图形界面来决定使用上述哪种自启方法。我一般不需要它的图形界面，而是希望开机时它能够默默启动，这样开机后我就能直接在浏览器中使用，所以我选择了第一种方式。</p>
+
+<h2 id="chrome">Chrome设置</h2>
+<ol>
+  <li>安装Proxy Switchy Sharp扩展：打开<a href="chrome://extensions/">Chrome扩展页面</a>，将local/SwitchySharp.crx文件拖入到浏览器中安装</li>
+  <li>导入配置：点击Proxy SwitchySharp图标=&gt;选项=&gt;导入/导出=&gt;从文件恢复，选择local/SwitchyOptions.bak导入</li>
+  <li>更新规则：先运行goagent：<code>python proxy.py</code>，然后在扩展设置页点击切换规则=&gt;立即更新列表=&gt;保存</li>
+</ol>
+
+<p>好了，一切就绪。赶紧登陆Twitter发布一条推文吧！</p>
+
+<h2 id="gravatar">设置Gravatar头像</h2>
+<p>设置好GoAgent后，想注册<a href="http://en.gravatar.com/">Gravatar</a>账号，给自己设置一个全球通用头像，却发现注册不成功，始终报”Sorry, but this user-agent is banned from using the password retrieval tool.”错误。查阅资料后发现，经过GoAgent访问网站的会在User-Agent中加入一个”AppEngine-Google”标识，可能Worldpress为了安全考虑屏蔽了这类注册。</p>
+
+<p>所以考虑用Free Gate进行注册，但是这家伙翻墙实在是太慢了，而且还不稳定。没办法，买不起VPN，就只能忍受龟速了。好歹最终还是注册成功，然后立马换用GoAgent登陆设置头像，OK，搞定！</p>
+
+<blockquote>
+  <p>申请Google App Engine请参考：<a href="https://code.google.com/p/goagent/wiki/InstallGuide">GoAgent平台部署教程</a></p>
+
+  <p>Ubuntu上安装GoAgent请参考：<a href="https://code.google.com/p/goagent/wiki/GoAgent_Linux">Ubuntu GoAgent使用教程</a></p>
+</blockquote>
+
+
+	</article>
+
+	<span class="meta">2013-08-24 • Published under <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>(CC) BY-NC-SA</a></span>
+</div>
+
+      </div>
+    </div>
+
+    
+
+    <div class="toolbar">
+	<ul class="toolbar-nav">
+		<li title="Home"><a href="http://localhost:4000/blog"><i class="fa fa-home fa-lg"></i></a></li>
+		<li title="About Me"><a href="/about"><i class="fa fa-user fa-lg"></i></a></li>
+		<li title="Subscribe Me"><a href="/feed.xml"><i class="fa fa-rss fa-lg"></i></a></li>
+	</ul>
+</div>
+
+    </body>
+</html>
