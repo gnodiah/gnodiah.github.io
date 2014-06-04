@@ -8,3 +8,6 @@ url: "http://gnodiah.github.io/blog"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+github: 'https://github.com/Gnodiah/'
+twitter: 'https://twitter.com/gnodiahwei'
