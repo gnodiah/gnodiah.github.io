@@ -1,13 +1,13 @@
 # Site settings
 title: Hayden Wei
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+email: haidongrun#gmail.com
+description: "My thougyts about Programming, Life, Technology."
 baseurl: ""
 url: "http://gnodiah.github.io/blog"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /blog/:year/:month/:title/
 
 github: 'https://github.com/Gnodiah/'
 twitter: 'https://twitter.com/gnodiahwei'
