@@ -3,7 +3,7 @@ title: Hayden Wei
 email: haidongrun#gmail.com
 description: "My thougyts about Programming, Life, Technology."
 baseurl: ""
-url: "http://gnodiah.github.io/blog"
+url: "http://gnodiah.github.io"
 
 # Build settings
 markdown: kramdown
