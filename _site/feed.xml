@@ -3,8 +3,8 @@
   <channel>
     <title>Hayden Wei</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
-    <link>http://localhost:4000/blog/</link>
-    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://gnodiah.github.io/blog/</link>
+    <atom:link href="http://gnodiah.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Fucking GFW with GoAgent</title>
@@ -67,8 +67,8 @@ python addto-startup.py
 
 </description>
         <pubDate>Sat, 24 Aug 2013 17:23:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/goagent/2013/08/24/fucking-gfw-with-goagent/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/goagent/2013/08/24/fucking-gfw-with-goagent/</guid>
+        <link>http://gnodiah.github.io/blog/goagent/2013/08/24/fucking-gfw-with-goagent/</link>
+        <guid isPermaLink="true">http://gnodiah.github.io/blog/goagent/2013/08/24/fucking-gfw-with-goagent/</guid>
       </item>
     
       <item>
@@ -188,8 +188,8 @@ EF9EBEA0476ECAD25CDE43FB6EB3F211
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Sat, 20 Jul 2013 01:12:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/vim/2013/07/20/customize-fedora-step-by-step/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/vim/2013/07/20/customize-fedora-step-by-step/</guid>
+        <link>http://gnodiah.github.io/blog/vim/2013/07/20/customize-fedora-step-by-step/</link>
+        <guid isPermaLink="true">http://gnodiah.github.io/blog/vim/2013/07/20/customize-fedora-step-by-step/</guid>
       </item>
     
   </channel>
