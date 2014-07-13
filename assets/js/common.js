@@ -25,11 +25,11 @@ function timeLost(type) {
 		case 1:
 			return "Page <strong>" + day + "</strong> of " + yday + ", Chapter <strong>" + year + "</strong>";
 		case 2:
-			return (age + byday/yday).toFixed(10);
+			return (age + byday/yday).toFixed(9);
 		case 3:
 			return "Page <strong>" + bday + "</strong> of Undefined" + ", Chapter <strong>Lifetime</strong>";
 		case 4:
-			return (timeToDate(now - new Date(year, 0, 1)) / yday * 100).toFixed(8) + " %";
+			return (timeToDate(now - new Date(year, 0, 1)) / yday * 100).toFixed(7) + " %";
 		default:
 			return now;
 	}
@@ -44,6 +44,6 @@ $(document).ready(function() {
 		$(".1stPage .2ndSlide").text(timeLost(4));
 		$(".2ndPage .2ndSlide").text(timeLost(2));
 	}
-	setInterval(setAge, 300);
+	setInterval(setAge, 60);
 });
 
