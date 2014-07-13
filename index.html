@@ -5,15 +5,23 @@ title: Welcome!
 
 {% include head.html %}
 
+<script src="/assets/js/common.js"></script>
+
 <div class="home">
 	<div id="fullpage">
-		<div class="section" style="background-color: rgb(27, 188, 155); font-size: 60px; text-align: center; color: #fff">Welcome!</div>
+		<div class="section 1stPage" style="background: #1bbc9b;">
+			<div class="1stSlide"></div>
+			<div class="2ndSlide"></div>
+		</div>
+		<div class="section 2ndPage" style="background: #4BBFC3;">
+			<div class="1stSlide"></div>
+			<div class="2ndSlide"></div>
+		</div>
 	</div>
-
 </div>
 
 <script>
 $(document).ready(function() {
-	$('#fullpage').fullpage();
+	$("#fullpage").fullpage();
 });
 </script>

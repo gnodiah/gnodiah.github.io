@@ -477,6 +477,13 @@ a:visited { color: #205caa; }
 		float: none;
 		clear: both;
 		width: auto;
-	margin: 0 0 15px; }
+		margin: 0 0 15px;
+	}
+}
 
+/* home page */
+.home .section {
+	font-size: 50px;
+	text-align: center;
+	color: #fff;
 }
