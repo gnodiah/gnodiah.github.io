@@ -3,11 +3,11 @@ title: Hayden Wei
 email: haidongrun#gmail.com
 description: "My thougyts about Programming, Life, Technology."
 baseurl: ""
-url: "http://gnodiah.github.io"
+url: "http://www.sharesth.com"
 
 # Build settings
 markdown: kramdown
-permalink: /blog/:year/:month/:title/
+permalink: /blog/:year/:month/:title
 
 github: 'https://github.com/Gnodiah/'
 twitter: 'https://twitter.com/gnodiahwei'

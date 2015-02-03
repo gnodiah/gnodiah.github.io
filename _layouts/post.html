@@ -7,9 +7,12 @@ layout: default
 		<h1>{{ page.title }}</h1>
 	</header>
 
+	<div class="meta">
+		<span>作者：<a href='{{ site.url }}'>@gnodiah</a></span>
+		<span>日期：{{ page.date | date: "%Y-%m-%d" }}</span>
+	</div>
 	<article class="post-content">
 		{{ content }}
 	</article>
 
-	<span class="meta">{{ page.date | date: "%Y-%m-%d" }}{% if page.author %} • <a href='{{ site.url }}'>@{{ page.author }}</a>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} • Published under <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>(CC) BY-NC-SA</a></span>
 </div>
