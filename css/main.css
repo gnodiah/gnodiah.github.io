@@ -502,6 +502,10 @@ a:visited { color: #205caa; }
 	color: #fff;
 }
 
+.home {
+  line-height: 1.5;
+}
+
 /* hide duoshuo powered-by */
 .ds-powered-by {
   display: none;
