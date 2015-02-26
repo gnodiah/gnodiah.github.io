@@ -9,10 +9,10 @@
 html, body { height: 100%; }
 
 body {
-  font-family: "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Microsoft Yahei", "宋体", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   /* font-family: Helvetica, Arial, sans-serif; */
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 180%;
 	font-weight: 300;
 	background-color: #f1f1f1;
 	color: hsla(41, 19%, 23%, 1);
@@ -48,7 +48,7 @@ a:visited { color: #205caa; }
 	bottom: 0;
 	width: 45px;
 	z-index: 2000;
-	background-color: #444;
+	background-color: #777;
 	opacity: .9;
 	box-shadow: 0 0 10px rgba(0,0,0,.2);
 	padding-top: 80px
@@ -178,7 +178,7 @@ a:visited { color: #205caa; }
 
 .home h1 {
 	margin-bottom: 25px;
-	border-bottom: 1px dashed #CCC;
+	border-bottom: 1px solid #CCC;
 	font-size: 2em;
 }
 
@@ -203,13 +203,13 @@ a:visited { color: #205caa; }
 
 .post-header {
 	margin: 10px 0 0;
-	border-bottom: 1px dashed #CCC;
+	border-bottom: 1px solid #CCC;
 	color: #6f6632;
 }
 
 .post-header h1 {
 	font-size: 2em;
-	letter-spacing: -1.75px;
+	/* letter-spacing: -1.75px; */
 	line-height: 1;
 	font-weight: 300;
 	padding-bottom: 20px;
@@ -236,7 +236,7 @@ a:visited { color: #205caa; }
 }
 
 .post-content {
-	border-bottom: 1px dashed #CCC;
+	/* border-bottom: 1px dashed #CCC; */
   background-color: #eae8de;
   padding: 0.2em 1.3em;
 	margin-top: 30px;
@@ -263,13 +263,15 @@ a:visited { color: #205caa; }
 
 .post-content h3 {
 	font-size: 26px;
-	letter-spacing: -1px;
+	/* letter-spacing: -1px; */
   color: #6f6632;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #CCC;
 }
 
 .post-content h4 {
 	font-size: 20px;
-	letter-spacing: -1px;
+	/* letter-spacing: -1px; */
 }
 
 .post-content blockquote {
@@ -277,7 +279,7 @@ a:visited { color: #205caa; }
 	padding-left: 20px;
 	/* font-size: 18px; */
 	opacity: .6;
-	letter-spacing: -1px;
+	/* letter-spacing: -1px; */
 	font-style: italic;
 	margin: 30px 0;
 	background: none repeat scroll 0 0 rgba(102,128,153,.05)
@@ -498,4 +500,9 @@ a:visited { color: #205caa; }
 	font-size: 50px;
 	text-align: center;
 	color: #fff;
+}
+
+/* hide duoshuo powered-by */
+.ds-powered-by {
+  display: none;
 }

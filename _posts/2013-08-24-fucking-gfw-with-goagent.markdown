@@ -6,6 +6,7 @@ author: gnodiah
 comments: true
 categories: [GoAgent] 
 tags: [GoAgent, Tutorial] 
+duoshuo_thhead_key: 2
 
 ---
 GFW真是一个神奇而又无处不在的东西，它总是与时俱进地封杀你想访问的网站。如果有可能，真是枪毙它1W次都不过瘾。不过好歹有Google GoAgent，它强大、免费，每天提供1G的流量，足以让你用Google查阅资料，观看Youtube的视频，刷刷Twitter的信息。

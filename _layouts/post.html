@@ -8,7 +8,7 @@ layout: default
 	</header>
 
 	<div class="meta">
-		<span>作者：<a href='{{ site.url }}'>@gnodiah</a></span>
+		<span>作者：<a href='{{ site.url }}'>Hayden Wei</a></span>
 		<span>日期：{{ page.date | date: "%Y-%m-%d" }}</span>
 	</div>
 	<article class="post-content">
@@ -16,3 +16,15 @@ layout: default
 	</article>
 
 </div>
+
+<div class="ds-thread" data-thhead-key="{{ page.duoshuo_thhead_key }}" data-title="{{ page.title }}" data-url="{{ site.url}}{{page.url }}"></div>
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"sharesth"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
