@@ -510,3 +510,19 @@ a:visited { color: #205caa; }
 .ds-powered-by {
   display: none;
 }
+
+.post-info {
+  border: 1px dashed #aaa;
+  margin: 10px 0;
+  border-radius: 15px;
+  height: 160px;
+}
+
+.post-info img, .post-info div {
+  float: left;
+}
+
+.post-info div ul {
+  list-style-type: none;
+  padding: 30px 10px 10px;
+}
