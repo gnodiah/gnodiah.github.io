@@ -527,3 +527,19 @@ a:visited { color: #205caa; }
   list-style-type: none;
   padding: 30px 10px 10px;
 }
+
+
+#fullpage div.thirdSlide {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+#fullpage div.thirdSlide a {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 2px 10px;
+  margin: 10px 20px;
+  color: #fff;
+  font-family: cursive;
+}
