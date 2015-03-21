@@ -543,3 +543,10 @@ a:visited { color: #205caa; }
   color: #fff;
   font-family: cursive;
 }
+
+h1#motto {
+  font-family: fantasy;
+  color: sandybrown;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+}
