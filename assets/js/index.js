@@ -22,7 +22,7 @@ function timeLost(type) {
 }
 
 $(document).ready(function() {
-  console.log("Click " + "<a href='http://haydenwei.com/cn/blogs'>HERE</a>" + " to read my blogs and know more about me.");
+  console.log("Hi, welcome to my blog. Just click haydenwei.com/cn/blogs to read my blogs and know more about me.");
 	$(".1stPage .1stSlide").html(timeLost(1));
 	$(".1stPage .2ndSlide").text(timeLost(4));
 
