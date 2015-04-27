@@ -13,7 +13,7 @@ body {
   /* font-family: Helvetica, Arial, sans-serif; */
 	font-size: 16px;
 	line-height: 180%;
-	background-color: #f1f1f1;
+	background-color: #eae8de;
 	color: hsla(41, 19%, 23%, 1);
 }
 
@@ -30,7 +30,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-	/* max-width: 860px; */
+	max-width: 960px;
 	/* padding: 0 30px; */
 	margin: 0 auto;
 	zoom: 1;
@@ -210,7 +210,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	font-size: 2em;
 	/* letter-spacing: -1.75px; */
 	line-height: 1;
-	font-weight: 300;
+	/* font-weight: 300; */
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -251,7 +251,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 .post-content h5,
 .post-content h6 {
 	line-height: 1;
-	font-weight: 300;
+	/* font-weight: 300; */
 	margin: 40px 0 20px;
 }
 
