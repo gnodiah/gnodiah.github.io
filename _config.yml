@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://haydenwei.com"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: /blog/:year/:month/:title
 
 github: 'https://github.com/Gnodiah/'

@@ -445,3 +445,7 @@ h1#motto {
   font-size: 2.5em;
   border-bottom-color: burlywood;
 }
+
+.highlight {
+  margin: 10px 0;
+}
