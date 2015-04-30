@@ -331,7 +331,7 @@ pre code, p code {
 
 @media screen and (max-width: 600px) {
 
-	.wrap { width: 100%; padding: 0 12px; }
+	.wrap { width: 98%; padding: 0; }
 
 	.site-nav {
 		position: fixed;
