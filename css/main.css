@@ -113,7 +113,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	font-size: 18px;
 	font-weight: 300;
 	letter-spacing: -.5px;
-	margin-bottom: 15px;
+	margin: 15px 0;
 }
 
 .site-footer .column { float: left; margin-bottom: 15px; }
@@ -440,3 +440,5 @@ h1#motto {
 }
 
 #uyan-copyright { display: none; }
+
+footer .wrap { border-top: 1px solid #efefef; }
