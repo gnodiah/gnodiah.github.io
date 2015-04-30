@@ -32,7 +32,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	/* padding: 0 30px; */
 	margin: 0 auto;
 	zoom: 1;
-	width: 68%;
+	width: 65%;
 }
 
 /* Layout Styles */
@@ -73,14 +73,14 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	border-top: 5px solid #444;
 	border-bottom: 1px solid #e8e8e8;
 	min-height: 56px;
-	background-color: white;
+	background-color: #eae8de;
 }
 
 .site-title,
 .site-title:hover,
 .site-title:visited {
 	display: block;
-	color: #333;
+	color: #ccc;
 	font-size: 26px;
 	letter-spacing: -1px;
 	float: left;
@@ -331,7 +331,7 @@ pre code, p code {
 
 @media screen and (max-width: 600px) {
 
-	.wrap { padding: 0 12px; }
+	.wrap { width: 100%; padding: 0 12px; }
 
 	.site-nav {
 		position: fixed;
