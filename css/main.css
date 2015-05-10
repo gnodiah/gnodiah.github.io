@@ -439,6 +439,6 @@ h1#motto {
   margin: 10px 0;
 }
 
-.1stSlide strong, .2ndSlide strong {
+#fullpage div.1stSlide strong {
   color: #ccc;
 }
