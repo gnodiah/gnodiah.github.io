@@ -13,7 +13,7 @@ function timeLost(type) {
 
 	switch(type) {
 		case 1:
-			return "Page <strong>" + day + "</strong> of " + yday + ", Chapter <strong>" + year + "</strong>";
+			return "Page <strong style='color: #ccc'>" + day + "</strong> of " + yday + ", Chapter <strong style='color: #ccc'>" + year + "</strong>";
 		case 4:
 			return (timeToDate(now - new Date(year, 0, 1)) / yday * 100).toFixed(7) + " %";
 		default:
