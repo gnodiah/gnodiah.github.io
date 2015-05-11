@@ -17,7 +17,7 @@ function timeLost(type) {
 		case 4:
 			return (timeToDate(now - new Date(year, 0, 1)) / yday * 100).toFixed(7) + " %";
 		default:
-			return now;
+			return "<span style='color: #ccc'>TIME NEVER WAIT FOR YOU!</span>";
 	}
 }
 
@@ -25,6 +25,7 @@ $(document).ready(function() {
   console.log("Hi, welcome to my blog. Just click http://haydenwei.com/cn/blogs to read my blogs and know more about me.");
 	$(".1stPage .1stSlide").html(timeLost(1));
 	$(".1stPage .2ndSlide").text(timeLost(4));
+	$(".1stPage .thirdSlide").html(timeLost(0));
 
 	function setAge() {
 		$(".1stPage .2ndSlide").text(timeLost(4));
