@@ -7,7 +7,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: "Microsoft Yahei", "宋体", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
   /* font-family: Helvetica, Arial, sans-serif; */
 	font-size: 16px;
 	line-height: 180%;
@@ -15,7 +15,7 @@ body {
 	color: hsla(41, 19%, 23%, 1);
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; /*font-weight: 400;*/ }
 strong { font-weight: bold; }
 
 a { color: #2a7ae2; text-decoration: none; }
@@ -59,13 +59,8 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	height: 20px;
 }
 
-.toolbar-nav li i {
-	color: #BBB;
-}
-
-.toolbar-nav li i:hover {
-	color: #FFF;
-}
+.toolbar-nav li i { color: #BBB; }
+.toolbar-nav li i:hover { color: #FFF; }
 
 /* Site header */
 
@@ -89,11 +84,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	z-index: 1;
 }
 
-.site-nav {
-	float: right;
-	line-height: 56px;
-}
-
+.site-nav { float: right; line-height: 56px; }
 .site-nav .menu-icon { display: none; }
 
 .site-nav .page-link {
@@ -211,15 +202,17 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	line-height: 1;
 	/* font-weight: 300; */
 	padding-bottom: 20px;
-	text-align: center;
+	/*text-align: center;*/
 }
+
+.post { padding: 0.2em 1.3em; }
 
 .post .meta {
 	font-size: 15px;
 	color: #818181;
 	margin-top: 5px;
 	font-size: 80%;
-	text-align: center;
+	/*text-align: center;*/
 
 	/* border: 0; */
 	/* background-color: #D6DBDF; */
@@ -229,14 +222,12 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	/* padding: 2px 4px; */
 }
 
-.post .meta span {
-	margin: 0 30px;
-}
+.post .meta span { margin-right: 30px; }
 
 .post-content {
 	/* border-bottom: 1px dashed #CCC; */
   background-color: #eae8de;
-  padding: 0.2em 1.3em;
+  padding-top: 0.2em;
 	margin-top: 30px;
 }
 
@@ -254,10 +245,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 	margin: 40px 0 20px;
 }
 
-.post-content h2 {
-	font-size: 32px;
-	letter-spacing: -1.25px;
-}
+.post-content h2 { font-size: 32px; letter-spacing: -1.25px; }
 
 .post-content h3 {
 	font-size: 26px;
@@ -267,10 +255,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
   border-bottom: 1px dashed #CCC;
 }
 
-.post-content h4 {
-	font-size: 20px;
-	/* letter-spacing: -1px; */
-}
+.post-content h4 { font-size: 20px; /* letter-spacing: -1px; */ }
 
 .post-content blockquote {
 	border-left: 6px solid #66A;
@@ -396,14 +381,10 @@ pre code, p code {
 	color: #fff;
 }
 
-.home {
-  line-height: 1.5;
-}
+.home { line-height: 1.5; }
 
 /* hide duoshuo powered-by */
-.ds-powered-by {
-  display: none;
-}
+.ds-powered-by { display: none; }
 
 .post-info {
   border: 1px dashed #aaa;
@@ -436,8 +417,6 @@ h1#motto {
   border-bottom-color: burlywood;
 }
 
-.highlight {
-  margin: 10px 0;
-}
+.highlight { margin: 10px 0; }
 
 #uyan-copyright { display: none; }
