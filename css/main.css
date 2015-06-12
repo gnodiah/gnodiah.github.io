@@ -11,7 +11,7 @@ body {
   /* font-family: Helvetica, Arial, sans-serif; */
 	font-size: 16px;
 	line-height: 180%;
-	background-color: #eae8de;
+	background-color: #F5F5D3;
 	color: hsla(41, 19%, 23%, 1);
 }
 
@@ -66,9 +66,9 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 
 .site-header {
 	border-top: 5px solid #444;
-	border-bottom: 1px solid #eed;
+	/* border-bottom: 1px solid #eed; */
 	min-height: 56px;
-	background-color: #eae8de;
+	/* background-color: #eae8de; */
 }
 
 .site-title,
@@ -226,7 +226,7 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 
 .post-content {
 	/* border-bottom: 1px dashed #CCC; */
-  background-color: #eae8de;
+  /* background-color: #eae8de; */
   padding-top: 0.2em;
 	margin-top: 30px;
 }
@@ -271,11 +271,15 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
-/* .pre { */
-/* 	background-color: rgba(102, 128, 153, 0.05); */
-/* } */
+pre {
+  border: #e0dfcc 10px solid;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
 
 pre code, p code {
+  padding: 1em !important;
   /* font: normal 12pt Ubuntu Mono; */
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 13px;

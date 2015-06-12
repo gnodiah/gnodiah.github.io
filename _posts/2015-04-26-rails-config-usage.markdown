@@ -45,10 +45,7 @@ Rails中的`Settings`并不是Rails自带的，而是`rails_config`这个gem包�
     change_pwd_switch: 2
 
     # Settings.change_pwd_switch #=> 2
-    ```
 
-    ```ruby
-    # File: config/settings.yml
     solr:
       host: http://127.0.0.1
       port: 8983
