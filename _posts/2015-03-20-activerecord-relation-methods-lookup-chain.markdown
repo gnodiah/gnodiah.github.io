@@ -131,7 +131,7 @@ def where(opts, *rest)
 end
 {% endhighlight %}
 
-9、where方法中需要注意的是`build_where`这个方法，该方法会最终调用ActiveRecord::Sanitization.sanitize_sql_for_conditions方法来将你传入到where方法中的查询条件转化为一个有效的SQL语句字符串片段。**值得注意的是以Hash的形式传入时是有所不同的。**例如：
+9、where方法中需要注意的是`build_where`这个方法，该方法会最终调用ActiveRecord::Sanitization.sanitize\_sql\_for\_conditions方法来将你传入到where方法中的查询条件转化为一个有效的SQL语句字符串片段。**值得注意的是以Hash的形式传入时是有所不同的。**例如：
 
 {% highlight ruby%}
 Book.where("id = 1"])  #=> 返回["id = 942998"]
@@ -175,4 +175,4 @@ def to_a
 end
 {% endhighlight %}
 
-4、继续升入to_a方法内部，它调用exec_queries方法
+4、继续升入to\_a方法内部，它调用exec\_queries方法
