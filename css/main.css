@@ -7,7 +7,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: Helvetica, Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   /* font-family: Helvetica, Arial, sans-serif; */
 	font-size: 16px;
 	line-height: 180%;
@@ -177,7 +177,6 @@ a:hover { text-decoration: underline; color: #dd5c40; }
 
 .posts .post-link {
 	font-size: 1.1em;
-	letter-spacing: -1px;
 	line-height: 1em;
 	padding-left: 20px;
 }
@@ -278,13 +277,27 @@ pre {
   border-radius: 6px;
 }
 
-pre code, p code {
+pre code {
   padding: 1em !important;
   /* font: normal 12pt Ubuntu Mono; */
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 13px;
   line-height: 16px !important;
 	overflow: auto;
+}
+
+p code {
+  border: 0;
+  background-color: #DFD0B3;
+  border-radius: 4px;
+  color: #9C3E50;
+  font-size: 90%;
+  padding: 2px 4px;
+  white-space: nowrap;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  /* font-size: 13px; */
+  /* line-height: 16px !important; */
+  overflow: auto;
 }
 
 .line-numbers {
