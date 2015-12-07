@@ -9,7 +9,7 @@ ssh_user       = "harakiri"
 ssh_port       = "6666"
 document_root  = "apps/thepugautomatic.com"
 rsync_delete   = true
-deploy_default = "rsync"
+deploy_default = "push"
 
 
 
