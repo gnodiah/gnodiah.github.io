@@ -1,0 +1,8 @@
+---
+layout: page
+title: Page not found (Error 404)
+---
+
+Though several brave pugs died in the attempt, that page could not be found.
+
+Try the search box on the right, or browse through [all posts]({{root_url}}/).

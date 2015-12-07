@@ -1,0 +1,11 @@
+{% if page.category %}
+<link href="{{ site.root | strip_slash }}/tag/{{ page.category | category_for_url }}/atom.xml" rel="alternate" title="{{page.category}} on {{site.title}}" type="application/atom+xml">
+{% endif %}
+
+{% comment %}
+To customize the favicon, assign it to "/url/to/favicon.png"
+{% endcomment %}
+{% assign favicon = "/images/custom/favicon.ico" %}
+<!--Fonts from Google's Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>

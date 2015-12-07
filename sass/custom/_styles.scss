@@ -1,0 +1,212 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+html {
+  // We can't just set $page-bg since we also want to remove the image.
+  background: #FFF;
+}
+
+a code {
+  @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
+}
+
+li {
+  margin: 1em 0 1em 1.5em;
+}
+
+// Nicer styling for four-space indented code/shell commands.
+pre {
+  @include box-shadow(transparent 0 0 0);
+  border: 0;
+}
+
+// Remove box-shadow from backtick code examples.
+figure.code, pre {
+  @include box-shadow(transparent 0 0 0);
+}
+
+// Remove border from backtick code examples.
+.highlight {
+  border: none !important;
+}
+
+// Filenames above code examples.
+figure.code figcaption {
+  font-size: 14px;
+  background-color: #ededed;
+  border: none;
+  padding: 2px;
+  @include border-top-radius(0);
+  @include background-image(none);
+}
+
+.toggle-sidebar {
+  display: none;
+}
+
+.blog-footer {
+  background: transparent;
+  text-shadow: none;
+  text-align: center;
+  opacity: 0.8;
+}
+
+
+// Header
+
+.site-header {
+  text-align: center;
+}
+
+.the-pug {
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    border: none;
+    @include box-shadow(none);
+    width: 200px;
+    height: 222px;
+  }
+}
+
+.site-title {
+  $title-color: #daa520;
+
+  font-size: 28px;
+  color: $title-color;
+  margin-bottom: 0.5em;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $title-color;
+    }
+  }
+}
+
+.site-intro {
+  font-family: $sans;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.search {
+  width: 190px;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+// Sidebar
+
+.service-icon {
+  margin: 2em 0 0.5em;
+  text-align: center;
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  img {
+    border: none;
+    @include box-shadow(none);
+  }
+}
+
+#tweets,
+#pinboard_linkroll {
+  font-size: 0.9em;
+}
+
+.twitter-date,
+.pin-description,
+.pin-tag {
+  font-size: 80%;
+}
+
+.pin-title {
+  margin-bottom: 0 !important;
+}
+.pin-description {
+  margin-top: 3px;
+  margin-bottom: 0 !important;
+}
+
+#tweets {
+  .twitter-date {
+    display: block;
+  }
+
+  .loading {
+    padding: 0;
+
+    &:before {
+      background: none;
+      height: auto;
+    }
+  }
+}
+
+
+// Index
+
+@media only screen and (min-width: 768px) {
+  #index #blog-archives {
+    margin-top: 60px;
+  }
+}
+
+
+// Index/tag
+
+#blog-archives {
+  h2 {
+    top: -3px;
+  }
+  .entry-title {
+    font-size: 1em;
+  }
+  .categories {
+    font-size: 0.9em;
+  }
+  time {
+    font-size: 0.8em;
+    top: 1.3em;
+  }
+}
+
+
+// Entry
+
+.entry-title a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+article header {
+  p.meta {
+    position: static;
+  }
+  time {
+    text-transform: none;
+  }
+}
+
+
+// About
+
+.my-photo {
+  margin: 0 0 1em 0;
+  a {
+    text-decoration: none;
+    white-space: normal;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .my-photo {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+}
