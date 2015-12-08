@@ -22,7 +22,7 @@ category_title_prefix: ""
 permalink: /:year/:month/:title
 
 # Build settings
-markdown: kramdown
+markdown: rdiscount
 blog_index_sidebar: the_pug_automatic.html
 page_sidebar: the_pug_automatic.html
 post_sidebar: the_pug_automatic.html
