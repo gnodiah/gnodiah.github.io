@@ -17,7 +17,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.haydenwei.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  gnodiah
-date_format: "%B %e, %Y at %H:%M %Z"
+date_formatted: "%B %e, %Y at %H:%M %Z"
 category_title_prefix: ""
 permalink: /:year/:month/:title
 
