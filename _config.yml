@@ -26,6 +26,7 @@ markdown: rdiscount
 blog_index_sidebar: the_pug_automatic.html
 page_sidebar: the_pug_automatic.html
 post_sidebar: the_pug_automatic.html
+category_dir: tag
 pygments: false
 paginate: 10
 pagination_dir: blog
