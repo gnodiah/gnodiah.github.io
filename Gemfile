@@ -3,7 +3,7 @@ source "https://ruby.taobao.org"
 group :development do
   gem 'rake'
   gem 'rack'
-  gem 'jekyll'
+  gem 'jekyll', '~> 0.11.2'
   gem 'rdiscount'
   gem 'pygments.rb'
   gem 'RedCloth'
