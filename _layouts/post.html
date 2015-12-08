@@ -1,0 +1,44 @@
+---
+layout: default
+single: true
+---
+
+<div>
+{% include post/variables.html %}
+<article class="hentry {% if linklog %}linklog{% endif %}" role="article">
+  {% include article.html %}
+  <footer>
+    <p class="meta">
+      {% include custom/post_meta.html %}
+    </p>
+    {% unless page.sharing == false %}
+      {% include post/sharing.html %}
+    {% endunless %}
+    <p class="meta">
+      {% if page.next.url %}
+        <p>
+          <strong>Newer:</strong>
+          <a href="{{page.next.url}}">{{page.next.title}}</a>
+        </p>
+      {% endif %}
+      {% if page.previous.url %}
+        <p>
+          <strong>Older:</strong>
+          <a href="{{page.previous.url}}">{{page.previous.title}}</a>
+        </p>
+      {% endif %}
+    </p>
+  </footer>
+</article>
+{% include custom/after_post.html %}
+{% if page.comments == true %}{% include comments.html %}{% endif %}
+</div>
+{% unless page.sidebar == false or site.default_sidebar == false %}
+<aside class="sidebar">
+  {% if page.sidebar == nil or page.sidebar == 'collapse' %}
+    {% include_sidebar site.post_sidebar %}
+  {% else %}
+    {% include_sidebar %}
+  {% endif %}
+</aside>
+{% endunless %}

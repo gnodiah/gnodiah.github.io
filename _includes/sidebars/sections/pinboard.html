@@ -1,0 +1,19 @@
+{% if site.pinboard_user %}
+<section>
+  <p class="service-icon">
+    <a href="http://pinboard.in/u:{{site.pinboard_user}}"><img src="{{root_url}}/images/custom/pinboard.png" alt="{{site.pinboard_user}} @ Pinboard" title="{{site.pinboard_user}} @ Pinboard"></a>
+  </p>
+
+  <ul id="pinboard_linkroll">Fetching bookmarks…</ul>
+</section>
+<script type="text/javascript">
+  $(document).ready(function(){
+    pinboard.getFeed({
+        target: 'pinboard_linkroll' //id target for pinboard list
+      , user: "{{ site.pinboard_user }}"
+      , count: {{ site.pinboard_count }}
+    });
+  });
+</script>
+<script src="{{ root_url }}/javascripts/group/pinboard.js" type="text/javascript"></script>
+{% endif %}

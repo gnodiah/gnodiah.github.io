@@ -1,0 +1,17 @@
+_site
+.sass-cache
+.jekyll-metadata
+.bundle
+.DS_Store
+.gist-cache
+.pygments-cache
+_deploy
+public
+sass.old
+source.old
+source/_stash
+source/stylesheets/screen.css
+source/javascripts/octopress.min.js
+source/images/icon-*.png
+vendor
+node_modules
