@@ -28,5 +28,6 @@ page_sidebar: the_pug_automatic.html
 post_sidebar: the_pug_automatic.html
 category_dir: tag
 highlighter: rouge
+pygments: false
 paginate: 10
 pagination_dir: blog
