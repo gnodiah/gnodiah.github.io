@@ -27,6 +27,6 @@ blog_index_sidebar: the_pug_automatic.html
 page_sidebar: the_pug_automatic.html
 post_sidebar: the_pug_automatic.html
 category_dir: tag
-highlighter: pygments
+highlighter: rouge
 paginate: 10
 pagination_dir: blog
