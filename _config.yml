@@ -20,7 +20,6 @@ github_username:  gnodiah
 date_format: "%B %e, %Y at %H:%M %Z"
 category_title_prefix: ""
 permalink: /:year/:month/:title
-root: /
 
 # Build settings
 markdown: rdiscount
