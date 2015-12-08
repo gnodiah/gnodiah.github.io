@@ -25,9 +25,9 @@ layout: default
 {% unless page.sidebar == false or site.default_sidebar == false %}
 <aside class="sidebar">
   {% if page.sidebar == nil or page.sidebar == 'collapse' %}
-    {% include_sidebar site.page_sidebar %}
+    {% include sidebars/the_pug_automatic.html %}
   {% else %}
-    {% include_sidebar %}
+    {% include sidebars/the_pug_automatic.html %}
   {% endif %}
 </aside>
 {% endunless %}
