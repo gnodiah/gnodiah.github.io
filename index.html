@@ -1,19 +1,40 @@
----
-layout: page
-footer: false
-body_id: index
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hayden Wei</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/application.css">
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <img src="images/pug_1x.png" srcset="images/pug_2x.png 2x, images/pug_3x.png 3x" alt="" class="the-pug">
 
-<div id="blog-archives">
-{% for post in site.posts reverse %}
-{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-{% unless year == this_year %}
-  {% assign year = this_year %}
-  <h2>{{ year }}</h2>
-{% endunless %}
-{% include post/variables.html %}
-<article {% if linklog %}data-linklog{% endif %}>
-  {% include archive_post.html %}
-</article>
-{% endfor %}
-</div>
+        <p>I'm <b>Hayden Wei</b>, a web developer.</p>
+
+        <p>I blog at <a href="http://haydenwei.com/posts/">一根札记</a>.</p>
+
+        <p>
+        I live with <a href="http://johannaost.com">Johanna</a> in Stockholm.
+        I work at <a href="http://www.zhe800.com">zhe800.com</a>.
+        </p>
+
+        <p>
+        Contact me at <a href="http://twitter.com/gnodiahwei"><span class="at">@</span>gnodiahwei</a>
+        or
+        <a href="mailto:haidongrun@gmail.com">hayden<span class="at">@</span>wei.com</a>.
+        </p>
+
+        <ul class="elsewhere">
+          <li class="elsewhere__item"><a href="http://github.com/gnodiah">GitHub</a></li>
+          <li class="elsewhere__item"><a href="http://instagram.com/gnodiah">Instagram</a></li>
+          <li class="elsewhere__item"><a href="https://pinboard.in/u:gnodiah">Pinboard</a></li>
+          <li class="elsewhere__item"><a href="#">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
